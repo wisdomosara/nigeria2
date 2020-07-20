@@ -14,6 +14,20 @@ nav{
 .gradient-main{
     padding:140px 10vw !important;
 }
+.banner{
+    padding:10px 10vw;
+    background-color:  #FFB313;
+    display: flex;
+    justify-content: space-between;
+}
+.banner button{
+    background-color: inherit;
+    outline: none;
+    border-style: none;
+    border:1px solid white;
+    border-radius: 5px;
+    color: white;
+}
 nav li{
     list-style: none;
     float: left;
@@ -41,11 +55,31 @@ p{
     font-weight: normal;
     font-size: 16px !important
 }
-.gradient{
-    height: 755px;
-    width: 100% !important;
-    background: url("./images/Rectangle\ 9.png");
-    background-repeat: no-repeat;
+.overlay{
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    background-color:  rgba(16, 52, 166, 0.8);
+    padding: 10px 10vw !important;
+}
+.overlay-text{
+    margin-top:100px;
+}
+.overlay-text h1{
+    width:50%; 
+    font-size:3.3vw
+}
+.overlay-text p{
+    width:55%; 
+    font-size:1.6vw
+}
+.main {
+    position: relative;
+}
+.main img{
+    width: 100vw;
+    height: 572px;
+    object-fit: cover;
 }
 .radio{
     height: 24px !important;
@@ -60,12 +94,29 @@ p{
 input{
     padding: 8px
 }
+.people{
+    padding:100px 10vw
+}
+.line{
+    height: 10px;
+    width:15vw;
+    background-color: #FFB313;
+    border-radius: 20px;
+}
+.people h1{
+    font-size: 2.6vw;
+    color: #B4020A;
+    font-weight: bold
+}
+.people p{
+    font-size: 1.3vw
+}
+.sign-up{
+    padding: 20px 20vw;
+}
 @media only screen and (max-width:576px) {
-    .gradient-main{
-        padding: 30px 30px 0 30px !important
-    }
     nav{
-        padding: 10px 30px 10px 20px !important
+        padding: 10px 30px 10px 30px !important
     }
     .hero-text{
         margin: 0 !important;
@@ -88,6 +139,7 @@ input{
         position: fixed;
         right:0;
         top:0;
+        opacity: 1;
         width: 0%;
         background-color: white;
         height: 100vh;
@@ -97,12 +149,16 @@ input{
         transition: all 0.5s ease-out;
         z-index: 1;
     }
+    .spa{
+        font-size: 20px !important;
+        color: #1034A6 !important;
+    }
     .close{
         float: right;
         font-weight: bolder;
         color: #1034A6 !important;
         font-size: 55px !important;
-        margin: 15px 36px 0 0;
+        margin: 45px 36px 0 0;
         padding: 0;
         cursor: pointer;
         z-index: 2
@@ -136,5 +192,61 @@ input{
     .side-nav ul li a:hover{
         color: #1034A6 !important;
         text-decoration: none;
+    }
+    .overlay{
+        position: absolute;
+        width: 100vw;
+        height: 100%;
+        background-color:  rgba(16, 52, 166, 0.8);
+        padding: 10px 30px !important;
+    }
+    .main {
+        position: relative;
+    }
+    .overlay p{
+        font-size:18px !important;
+        width:100% !important
+    }
+    .overlay h1{
+        font-size:25px !important;
+        width: 100% !important
+    }
+    .banner{
+        padding:10px 30px;
+    }
+    .banner img{
+        width: 4.5vw
+    }
+    .main img{
+        width: 100vw;
+        height: 500px;
+        object-fit:cover
+    }
+    .people{
+        padding:30px 20px
+    }
+    .people img{
+        width: 100% !important
+    }
+    .line{
+        height: 5px;
+        width:15vw;
+        background-color: #FFB313;
+        border-radius: 20px;
+    }
+    .people h1{
+        font-size: 4vw;
+        color: #B4020A;
+        font-weight: bold
+    }
+    .people p{
+        font-size: 12px
+    }
+}
+@media only screen and (min-width:576px) {
+    @media only screen and (max-width:1100px) {
+        .overlay-text{
+            margin-top:150px;
+        }
     }
 }

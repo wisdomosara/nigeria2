@@ -10,16 +10,36 @@
     <link rel="stylesheet" href="./fontawesome/css/all.css">
 </head>
 <body>
+    <div class="banner">
+        <div class="contributor">
+            <button class="contributor-btn">Become a contributor</button>
+        </div>
+        <div class="social">
+            <img src="./images/Vector (24).png" class="ml-2">
+            <img src="./images/Vector (25).png" class="ml-2">
+            <img src="./images/Vector (26).png" class="ml-2">
+        </div>
+    </div>
     <nav class="container-fluid">
         <div class="logo">
             <img src="./images/Group.png" width="76px">
         </div>
         <div class="right-nav">
             <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">HEALTH</a></li>
-                <li><a href="#">SPORT</a></li>
-                <li><a href="#">POLITICS</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Who are we</a></li>
+                <li>
+                    <div class="dropdown open">
+                        <span class="dropdown-toggle"  id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                    Subjects
+                    </span>
+                        <div class="dropdown-menu" aria-labelledby="triggerId">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item disabled" href="#">Disabled action</a>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </div>
         <div class="mobile">
@@ -32,51 +52,63 @@
         <p class="close">&times;</p>
         <div class="side-nav-links">
             <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">HEALTH</a></li>
-                <li><a href="#">SPORT</a></li>
-                <li><a href="#">POLITICS</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Who are we</a></li>
+                <li>
+                    <div class="dropdown open">
+                        <span class="dropdown-toggle spa"  id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                    Subjects
+                    </span>
+                        <div class="dropdown-menu" aria-labelledby="triggerId">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item disabled" href="#">Disabled action</a>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
     <section class="gradient">
-        <div class="gradient-main" style="padding-top:167px;">
-            <div class="row d-flex">
-                <div class="col-12 col-sm-6 col-lg-7 hero-text pt-5 pr-5 mb-4">
-                    <h1 class="text-white">Transparency</h1>
-                    <h1 class="text-white">Accountability</h1>
-                    <h1 class="mb-5 text-white">Sustainability</h1>
-                    <p class="text-white">Track all government budgets, expenses, companies, directors  and excutive officers. Hear the latest goverment rumors and gist from all the regions of the country.</p>
+        <div class="main">
+            <div class="overlay">
+                <div class="overlay-text" >
+                    <h1 class="text-white mb-4">Nigerian voice on National Development</h1>
+                    <p class="text-white mb-3">Track all government budgets, expenses, companies, directors  and excutive officers. Hear the latest goverment rumors and gist from all the regions of the country.</p>
+                    <button class="btn btn-sm btn-danger">Sign Up</button>
                 </div>
-                <div class="col-12 col-sm-6 col-lg-5 sign-up" style="background-color:white; padding:0; border-radius:8px;border: 4px solid #FFFFFF;
-                box-shadow: 0px 40px 60px rgba(214, 217, 223, 0.22);">
-                    <div style="background-color:#1034A6; border-radius:8px" class="px-5 py-1">
-                        <h2 class="text-center text-white mb-3">Sign Up</h2>
-                        <p class="text-white text-center px-lg-5">Join the list of contributors and help the
-                            nation</p>
-                    </div>
-                    <div class="container pt-3">
-                        <form>
-                            <p style="color:#979797">Name</p>
-                            <input type="text" placeholder="Fullname" class="mb-3" style="width:100%; height:54px; border-radius:8px; background-color:rgba(29, 53, 87, 0.05);outline:none; border-style:none">
-                            <p style="color:#979797">Gender</p>
-                            <div class="d-flex align-items-start mb-3">
-                                <input type="radio" class="mr-3 radio" name="gender">
-                                <p class="mr-3">Male</p>
-                                <input type="radio" class="mr-3 radio" name="gender">
-                                <p class="mr-3">Female</p>
-                                <input type="radio" class="mr-3 radio" name="gender">
-                                <p class="mr-3">Others</p>
-                            </div>
-                            <p style="color:#979797">Phone Number</p>
-                            <input type="tel" placeholder="Phone Number" class="mb-3" style="width:100%; height:54px; border-radius:8px; background-color:rgba(29, 53, 87, 0.05);outline:none; border-style:none">
-                            <button class="mb-3" style="width:100%; background-color:#FFBE0B; height:48px; border-radius:8px; outline:none; border-style:none">Sign Up</button>
-                            <p class="text-center">After registration, you will be added to the contributor’s forum</p>
-                        </form>
-                    </div>
+            </div>
+            <img src="./images/Rectangle 32.png">
+        </div>
+    </section>
+    <section class="people">
+        <div class="container-fluid">
+            <div class="row d-flex align-items-center mb-5">
+                <div class="col-12 col-sm-6 mb-3">
+                    <img src="./images/Rectangle 30 (4).png" width="100%">
+                </div>
+                <div class="col-12 col-sm-6">
+                    <h1 class="mb-2">We Let Your Voice Be Heard</h1>
+                    <div class="line mb-4"></div>
+                    <p class="mb-4">In other to reduce government corruption in the country and to make our country Nigeria one of the top countries in the world, we created this plaform to enable both young and old voice out their opinions and expose the corruption of the goverment.</p>
+                    <p>We believe in transparency which makes us the best. We believe in a better Nigeria without corruption and a peaceful country whcih her citizens will fell safe in. Fot that, we are all joining hands to making Nigeria a better country for us all.</p>
+                </div>
+            </div>
+            <div class="row d-flex align-items-center">
+                <div class="col-12 col-sm-6 order-sm-12 mb-3">
+                    <img src="./images/Rectangle 30.png" width="100%">
+                </div>
+                <div class="col-12 col-sm-6 order-sm-1">
+                    <h1 class="mb-2">We Aim To Solve National Problem</h1>
+                    <div class="line mb-4"></div>
+                    <p class="mb-4">With the aim of national awareness and the voices of the citizens at hand, it’s our sole responsibility to bridge the gap and find safe and lasting solutions to the daily rise in national insecurities and embezzlement.</p>
+                    <p>Assuredly, with the interest of the masses at heart and the progress of the nation, we would get the country to the expected promise land, which would flow with milk and honey once again.</p>
                 </div>
             </div>
         </div>
+    </section>
+    <section class="sign-up">
+        <img src="./images/Group 83.png" width="100%">
     </section>
 
 
