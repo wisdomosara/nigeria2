@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+body{
+    font-family: open sans !important;
+    background-color: #FAFAFA !important;
+}
+nav{
+    background-color: white;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center;
+    padding: 10px 0;
+}
+nav li{
+    list-style: none;
+    float: left;
+    margin-left: 32px;
+}
+nav a{
+    text-decoration: none;
+    color:#1034A6;
+    font-family: open sans !important;
+}
+nav a:hover{
+    text-decoration: none;
+}
+.hero-text h1{
+    font-family: open sans;
+    font-weight: bold;
+    font-size: 3.3vw !important
+}
+p{
+    font-family: open sans;
+}
+.hero-text p{
+    font-family: open sans;
+    font-weight: normal;
+    font-size: 1.6vw !important
+}
+.gradient{
+    height: 755px;
+    width: 100%;
+    background: url("./images/Rectangle\ 9.png")
+}
+.radio{
+    height: 24px !important;
+    width: 24px;
+}
+@media only screen and (max-width:576px) {
+    .gradient-main{
+        padding: 30px 30px 0 30px !important
+    }
+    .hero-text{
+        margin: 0 !important;
+        padding:0 !important
+    }
+    .hero-text h1{
+        font-family: open sans;
+        font-weight: bold;
+        font-size: 7vw !important
+    }
+    p{
+        font-family: open sans;
+    }
+    .hero-text p{
+        font-family: open sans;
+        font-weight: normal;
+        font-size: 3vw !important
+    }
+}
