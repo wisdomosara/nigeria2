@@ -4,15 +4,20 @@ body{
     background-color: #FAFAFA !important;
 }
 nav{
-    background-color: white;
+    background-color: white !important;
     display: flex !important;
     justify-content: space-between !important;
     align-items: center;
-    padding: 10px 0;
+    color: #1034A6;
+    padding: 10px 10vw !important;
+}
+.gradient-main{
+    padding:140px 10vw !important;
 }
 nav li{
     list-style: none;
     float: left;
+     color:#1034A6;
     margin-left: 32px;
 }
 nav a{
@@ -34,12 +39,13 @@ p{
 .hero-text p{
     font-family: open sans;
     font-weight: normal;
-    font-size: 1.6vw !important
+    font-size: 16px !important
 }
 .gradient{
     height: 755px;
-    width: 100%;
-    background: url("./images/Rectangle\ 9.png")
+    width: 100% !important;
+    background: url("./images/Rectangle\ 9.png");
+    background-repeat: no-repeat;
 }
 .radio{
     height: 24px !important;
@@ -51,9 +57,15 @@ p{
 .side-nav{
     display: none
 }
+input{
+    padding: 8px
+}
 @media only screen and (max-width:576px) {
     .gradient-main{
         padding: 30px 30px 0 30px !important
+    }
+    nav{
+        padding: 10px 30px 10px 20px !important
     }
     .hero-text{
         margin: 0 !important;
@@ -70,7 +82,7 @@ p{
     .hero-text p{
         font-family: open sans;
         font-weight: normal;
-        font-size: 3vw !important
+        font-size: 16px !important
     }
     .side-nav{
         position: fixed;
@@ -83,18 +95,17 @@ p{
         text-align: left;
         overflow-x: hidden;
         transition: all 0.5s ease-out;
-        z-index: 5;
+        z-index: 1;
     }
     .close{
         float: right;
         font-weight: bolder;
         color: #1034A6 !important;
-        font-size: 50px !important;
-        margin: 20px 20px 0 0;
+        font-size: 55px !important;
+        margin: 15px 36px 0 0;
         padding: 0;
-        background-color: white;
         cursor: pointer;
-        z-index: 100
+        z-index: 2
     }
     .right-nav{
         display: none;
@@ -103,7 +114,6 @@ p{
         position: relative;
         display: block;
         cursor: pointer;
-        z-index: 1
     }
     .mobile div{
         width: 30px;
@@ -122,5 +132,9 @@ p{
     .side-nav ul li a{
         color: #1034A6 !important;
         font-size: 20px
+    }
+    .side-nav ul li a:hover{
+        color: #1034A6 !important;
+        text-decoration: none;
     }
 }
